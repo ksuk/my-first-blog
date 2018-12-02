@@ -16,6 +16,8 @@
       <div class="page-header">
         <h1><a href="/">Django Girls Blog</a></h1>
     </div>
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
